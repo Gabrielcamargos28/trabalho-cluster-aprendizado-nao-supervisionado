@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+@layer primeng {
+    .p-button-group .p-button.p-highlight:last-of-type:not(:only-of-type), 
+    .p-button-group p-button.p-highlight:last-of-type:not(:only-of-type) .p-button, 
+    .p-buttonset .p-button.p-highlight:last-of-type:not(:only-of-type), 
+    .p-buttonset p-button.p-highlight:last-of-type:not(:only-of-type) .p-button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      background: red;
+    }
+  }
+  
+body{
+  margin: 0;
+  padding: 0; 
+}
+p-inputnumber {
+    button {
+      background-color: red;
+    }
+}

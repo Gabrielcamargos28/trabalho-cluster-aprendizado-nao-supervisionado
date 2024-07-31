@@ -1,0 +1,196 @@
+<app-header></app-header>
+
+<div class="card flex justify-content-center">
+    <h2>Questionário de Clusterização</h2>
+    <form [formGroup]="clusterForm">
+        <div class="box">
+            <div class="grid">
+                <div class="box-filha">
+                    <label for="genero">Gênero:</label>
+                    <p-dropdown 
+                        [options]="generos" 
+                        formControlName="genero"
+                        optionLabel="nome" 
+                        optionValue="valor"
+                        placeholder="Selecione o gênero" />
+                </div>
+                <div class="box-filha">
+                    <label for="seniorCitizen">Idoso:</label>
+                    <p-selectButton 
+                        [options]="stateOptions" 
+                        formControlName="seniorCitizen" 
+                        optionLabel="label" 
+                        optionValue="value" />
+                </div>
+                <div class="box-filha">
+                    <label for="partner">Parceiro(a):</label>
+                    <p-selectButton 
+                        [options]="stateOptions" 
+                        formControlName="partner" 
+                        optionLabel="label" 
+                        optionValue="value" />
+                </div>
+                <div class="box-filha">
+                    <label for="dependents">Dependentes:</label>
+                    <p-selectButton 
+                        [options]="stateOptions" 
+                        formControlName="dependents" 
+                        optionLabel="label" 
+                        optionValue="value" />
+                </div>              
+                <!--<div class="box-filha">
+                    <label for="tenure">Tempo de Permanência:</label>
+                    <input 
+                    class="tenure"
+                    pInputText 
+                    formControlName="tenure" 
+                    placeholder="Tempo de permanência" 
+                    type="number" 
+                    step="0.01"
+                    min="0" 
+                    max="72" />
+                </div> -->        
+                <div class="box-filha">
+                    <label for="phoneService">Serviço de Telefone:</label>
+                    <p-selectButton 
+                        [options]="stateOptions" 
+                        formControlName="phoneService" 
+                        optionLabel="label" 
+                        optionValue="value" />
+                </div>        
+                <div class="box-filha">
+                    <label for="internetService">Serviço de Internet:</label>
+                    <p-dropdown 
+                    [options]="multipleLinesOptions" 
+                    formControlName="internetService" 
+                    optionLabel="nome" 
+                    optionValue="valor" />
+                </div>
+                <div class="box-filha">
+                    <label for="multipleLines">Linhas Múltiplas:</label>
+                    <p-dropdown  
+                        [options]="multipleLinesOptions" 
+                        formControlName="multipleLines" 
+                        optionLabel="nome" 
+                        optionValue="valor" />
+                </div>    
+                <div class="box-filha">
+                    <label for="onlineSecurity">Segurança Online:</label>
+                    <p-dropdown 
+                    [options]="multipleLinesOptions" 
+                    formControlName="onlineSecurity" 
+                    optionLabel="nome" 
+                    optionValue="valor" />
+                </div>
+                <div class="box-filha">
+                    <label for="onlineBackup">Backup Online:</label>
+                    <p-dropdown 
+                    [options]="multipleLinesOptions" 
+                    formControlName="onlineBackup" 
+                    optionLabel="nome" 
+                    optionValue="valor" />
+                </div>
+                <div class="box-filha">
+                    <label for="deviceProtection">Proteção de Dispositivos:</label>
+                    <p-dropdown 
+                    [options]="multipleLinesOptions" 
+                    formControlName="deviceProtection" 
+                    optionLabel="nome" 
+                    optionValue="valor" />
+                </div>
+                <div class="box-filha">
+                    <label for="techSupport">Suporte Técnico:</label>
+                    <p-dropdown 
+                    [options]="multipleLinesOptions" 
+                    formControlName="techSupport" 
+                    optionLabel="nome" 
+                    optionValue="valor" />
+                </div>
+                <div class="box-filha">
+                    <label for="streamingTV">Streaming TV:</label>
+                    <p-dropdown 
+                        [options]="stateOptions" 
+                        formControlName="streamingTV" 
+                        optionLabel="label" 
+                        optionValue="value" />
+                </div>
+                <div class="box-filha">
+                    <label for="streamingMovies">Streaming de Filmes:</label>
+                    <p-dropdown 
+                        [options]="stremingMovies" 
+                        formControlName="streamingMovies" 
+                        optionLabel="nome" 
+                        optionValue="valor" />
+                </div>
+                <div class="box-filha">
+                    <label for="contract">Contrato:</label>
+                    <p-dropdown 
+                        [options]="contratos" 
+                        formControlName="contract"
+                        optionLabel="nome" 
+                        optionValue="valor"
+                        placeholder="Selecione o contrato" />
+                </div>
+                
+                <!--<div class="box-filha">
+                    <label for="paperlessBilling">Faturamento Eletrônico:</label>
+                    <p-selectButton 
+                        [options]="stateOptions" 
+                        formControlName="paperlessBilling" 
+                        optionLabel="label" 
+                        optionValue="value" />
+                </div>-->
+                <div class="box-filha">
+                    <label for="paymentMethod">Método de Pagamento:</label>
+                    <p-dropdown 
+                        [options]="paymentMethods" 
+                        formControlName="paymentMethod" 
+                        optionLabel="nome" 
+                        optionValue="valor" />
+                </div><!--
+                <div class="box-filha">
+                    <label for="monthlyCharges">Encargos Mensais:</label>
+                    <p-inputNumber 
+                        formControlName="monthlyCharges" 
+                        [min]="0" 
+                        [showButtons]="true" 
+                        buttonLayout="horizontal" 
+                        [mode]="'decimal'" 
+                        placeholder="Encargos mensais" />
+                </div>
+                <div class="box-filha">
+                    <label for="totalCharges">Encargos Totais:</label>
+                    <p-inputNumber 
+                        formControlName="totalCharges" 
+                        [min]="0" 
+                        [showButtons]="true" 
+                        buttonLayout="horizontal" 
+                        [mode]="'decimal'" 
+                        placeholder="Encargos totais" />
+                </div>-->
+                <div class="box-filha">
+                    <label for="churn">Faturamento sem papel</label>
+                    <p-selectButton 
+                        [options]="stateOptions" 
+                        formControlName="paperlessBilling" 
+                        optionLabel="label" 
+                        optionValue="value" />
+                </div>
+                <div class="box-filha">
+                    <label for="churn">Churn (Evasão):</label>
+                    <p-selectButton 
+                        [options]="stateOptions" 
+                        formControlName="churn" 
+                        optionLabel="label" 
+                        optionValue="value" />
+                </div>
+            </div>
+            <p-button label="Prever Cluster" severity="danger" (click)="predictCluster()"></p-button>
+        </div>
+        
+    </form>
+</div>
+<div>
+    <p *ngIf="clusterDescription">{{ clusterDescription }}</p>
+  </div>
+  

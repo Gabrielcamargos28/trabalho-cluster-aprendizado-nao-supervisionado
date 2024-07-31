@@ -1,0 +1,163 @@
+<app-header></app-header>
+<p-accordion [activeIndex]="0">
+    <p-accordionTab header="Legenda">
+        <table>
+            <thead>
+                <tr>
+                    <th class="cabeca">Atributo</th>
+                    <th class="cabeca">Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gender (Gênero)</td>
+                    <td>Sexo do cliente (Masculino ou Feminino).</td>
+                </tr>
+                <tr>
+                    <td>SeniorCitizen (Idoso)</td>
+                    <td>Indica se o cliente é idoso (1) ou não (0).</td>
+                </tr>
+                <tr>
+                    <td>Partner (Parceiro)</td>
+                    <td>Indica se o cliente tem um parceiro (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>Dependents (Dependentes)</td>
+                    <td>Indica se o cliente tem dependentes (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>tenure (Tempo de permanência)</td>
+                    <td>Número de meses que o cliente está com a empresa. 0 é nenhum mês, 0.3333 um valor intermediario e 1 o valor máximo de permanência</td>
+                </tr>
+                <tr>
+                    <td>PhoneService (Serviço de telefone)</td>
+                    <td>Indica se o cliente possui serviço de telefone (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>MultipleLines (Múltiplas linhas)</td>
+                    <td>Indica se o cliente possui múltiplas linhas de telefone (Sim ou Não) 1 e 0
+                        0.3333 uma média ou um valor intermediário não categorizado</td>
+                </tr>
+                <tr>
+                    <td>InternetService (Serviço de Internet)</td>
+                    <td>Tipo de serviço de internet que o cliente possui (DSL, Fibra Óptica, ou Nenhum).</td>
+                </tr>
+                <tr>
+                    <td>OnlineSecurity (Segurança online)</td>
+                    <td>Indica se o cliente possui segurança online (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>OnlineBackup (Backup online)</td>
+                    <td>Indica se o cliente possui backup online (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>DeviceProtection (Proteção de dispositivo)</td>
+                    <td>Indica se o cliente possui proteção de dispositivo (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>TechSupport (Suporte técnico)</td>
+                    <td>Indica se o cliente possui suporte técnico (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>StreamingTV (Streaming de TV)</td>
+                    <td>Indica se o cliente possui serviço de streaming de TV (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>StreamingMovies (Streaming de filmes)</td>
+                    <td>Indica se o cliente possui serviço de streaming de filmes (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>Contract (Contrato)</td>
+                    <td>Tipo de contrato que o cliente possui Anual, 2 anos, Mensal</td>
+                </tr>
+                <tr>
+                    <td>PaperlessBilling (Fatura sem papel)</td>
+                    <td>Indica se o cliente usa faturamento eletrônico (Sim ou Não).</td>
+                </tr>
+                <tr>
+                    <td>PaymentMethod (Método de pagamento)</td>
+                    <td>Método de pagamento do cliente (Cartão de crédito, Débito automático, etc.).</td>
+                </tr>
+                <tr>
+                    <td>MonthlyCharges (Cobranças mensais)</td>
+                    <td>Valor mensal cobrado do cliente.</td>
+                </tr>
+                <tr>
+                    <td>TotalCharges (Cobranças totais)</td>
+                    <td>Valor total cobrado do cliente.</td>
+                </tr>
+                <tr>
+                    <td>Churn (Evasão)</td>
+                    <td>Indica se o cliente deixou a empresa no último mês (Sim ou Não).</td>
+                </tr>
+            </tbody>
+        </table>
+    </p-accordionTab>
+    <p-accordionTab header="Base de Dados">
+        <h3>Telco Customer Churn (IBM analytics)</h3>
+        <p>https://www.kaggle.com/datasets/blastchar/telco-customer-churn</p>
+        <p>
+            Os dados da rotatividade de clientes da Telco contêm informações sobre uma empresa de telecomunicações  que fornecia serviços de telefone e Internet para 7043 (3000) clientes na Califórnia no terceiro trimestre. Ele indica quais clientes saíram, ficaram ou se inscreveram para seu serviço.
+        </p>
+    </p-accordionTab>
+    <p-accordionTab header="WorkFlow">
+        <h1>WorkFlow</h1>
+        <h2 class="k">K-Means</h2>
+        <img src="../../assets/image.png" alt="K-means Clustering">
+        <p-divider />
+        <h2>Escolha de K</h2>
+        <img src="../../assets/kmeansK.png" alt="K-means Clustering">
+        <p-divider />
+        <h2>Scatter Plot</h2>
+        <img src="../../assets/scatterPlot.png" alt="K-means Clustering">
+        <h2>Overall</h2>
+        <img src="../../assets/overall.png" alt="K-means Overall">
+        <h2>Collum Filter</h2>
+        <img src="../../assets/columnFilter.png" alt="collumn filter">
+        <h2>Scatter Matrix</h2>
+        <img src="../../assets/matrixKmeans.png" alt="matrix">
+        <h2 class="k">K-Medois</h2>
+        <p-divider />
+        <h2>Escolha de K</h2>
+        <img src="../../assets/matrixKmeans.png.png" alt="K-means Clustering">
+        <p-divider />
+        <h2>Scatter Plot</h2>
+        <img src="../../assets/ScatterKmedois.png" alt="K-means Clustering">
+        <h2>Overall</h2>
+        <img src="../../assets/k-medoids.png" alt="K-means Overall">
+        <h2>Scatter Matrix</h2>
+        <img src="../../assets/scatterMatrixKMedois.png" alt="collumn filter">
+        <h2 class="k">Hierarchical Clustering</h2>
+        <p-divider />
+        <h2>Escolha de K</h2>
+        <img src="../../assets/configHc.png" alt="K-means Clustering">
+        <p-divider />
+        <h2>Scatter Plot</h2>
+        <img src="../../assets/scatterPlotHc.png" alt="K-means Clustering">
+        <h2>Scatter Matrix</h2>
+        <img src="../../assets/scatterMatrixHC.png" alt="collumn filter">
+        
+        
+    </p-accordionTab>
+    <p-accordionTab header="Objetivos">
+        <p>
+            Prever o comportamento de cancelamento de clientes, conhecido como churn.
+        </p>
+        <p>Cluster 0:</p>
+        <ul>
+            <li><strong>Renda:</strong> Alta</li>
+            <li><strong>Uso de Serviços:</strong> Baixo (pode não assinar muitos serviços adicionais como segurança online, backup, etc.)</li>
+            <li><strong>Faixa Etária:</strong> Pode ser de meia-idade a idoso</li>
+            <li><strong>Status Familiar:</strong> Pode ter mais casados ou dependentes</li>
+        </ul>
+        <br>
+        <p>Cluster 1:</p>
+        <ul>
+            <li><strong>Renda:</strong> Baixa</li>
+            <li><strong>Uso de Serviços:</strong> Alto (pode assinar vários serviços adicionais como streaming, segurança online, etc.)</li>
+            <li><strong>Faixa Etária:</strong> Pode ser mais jovem ou adulto jovem</li>
+            <li><strong>Status Familiar:</strong> Pode ter menos casados ou dependentes</li>
+        </ul>
+    </p-accordionTab>
+</p-accordion>
+
